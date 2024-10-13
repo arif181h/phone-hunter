@@ -1,5 +1,5 @@
 // loadData
-const loadPhone=async(serchText='13')=>{
+const loadPhone=async(serchText)=>{
   const res =await fetch(`https://openapi.programming-hero.com/api/phones?search=${serchText}`);
   const data =await res.json();
   const phones =data.data;
@@ -56,6 +56,7 @@ const toggleButton=(isLoading)=>{
   else{
     toggleButton.classList.add('hidden')
   }
+ 
 }
 
 const showDetailsButton=async(id)=>{
@@ -81,4 +82,3 @@ const showmodal=(phone)=>{
   `
   my_modal_5.showModal()
 }
-loadPhone()
