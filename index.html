@@ -80,9 +80,32 @@
       <button onclick="handleButton()" class="btn btn-accent">Search</button>
     </section>
       <section>
+        <div class="text-center my-12">
+          <span id="loading-spinner" class="loading loading-spinner loading-lg hidden"></span>
+        </div>
+        <div>
+          <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+<div class="modal-box bg-gray-100 text-black my-8">
+  <h3 id="modal-name" class="text-4xl font-bold">Hello!</h3>
+ <div id="modal-details-added">
+
+ </div>
+  <div class="modal-action">
+    <form method="dialog">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn text-rose-600 bg-amber-400">Close</button>
+    </form>
+  </div>
+</div>
+</dialog>
+        </div>
         <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           
           </div>
+          
+
         <div class="text-center">
           <button id="show-all" class="btn btn-active btn-accent hidden">Show All</button>
         </div>
